@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends 'customer_module/base.html' %}
+
+{% block content %}
+    <article class="Order">
+        <aside class="actions">
+            {% if user.is_authenticated %}
+                <a class="btn btn-secondary" href="{% url 'Order_edit' pk=Order.pk %}">
+                    {% include './icons/pencil-fill.svg' %}
+                </a>
+        {% endif %}
+        </aside>
+        {% if Order.Order_date %}
+            <time class="date">
+                {{ Order.Order_date }}
+            </time>
+        {% endif %}
+        <h2>{{ Order.Order_Number }}</h2>
+        <p>{{ Order.Order_Info|linebreaksbr }}</p>
+    </article>
+{% endblock %}
