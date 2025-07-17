@@ -28,12 +28,20 @@ class Employee:
         self.emp_phone = emp_phone
 
 class Order:
+    order_counter = 100
+    
     def __init__(self, order_id, customer, items):
-        self.order_id = order_id
+        self.order_id = Order.order_counter
+        Order.order_counter += 1
         self.customer = customer
-        self.items = items
+        self.items = items 
+        #List of Tuples based on the inventory list (Product, Quantity)
         self.status = "Pending"  
 
-    def update_status(self, order_status):
-        self.status = order_status
+    def update_status(self, new_status):
+        if new_status in ["Pending", "Shipped", "Delivered", "Cancelled"]:
+            #I made 4 different statuses for orders here, that way the user can see also if its cancelled. 
+            self.status = new_status
+        else:
+            print("Invalid status.")
 
