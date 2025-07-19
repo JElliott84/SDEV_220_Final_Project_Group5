@@ -7,7 +7,7 @@
 
 h1,
 .page-header h1,
-.post h2 a,
+.Order h2 a,
 .page-header h1 a,
 .page-header h1 a:visited,
 .page-header h1 a:active {
@@ -31,8 +31,8 @@ h4 {
   float: right;
 }
 
-.post-form textarea,
-.post-form input {
+.Order-form textarea,
+.Order-form input {
   width: 100%;
 }
 
@@ -45,16 +45,16 @@ h4 {
   margin-right: 20px;
 }
 
-.post {
+.Order {
   margin-bottom: 70px;
 }
 
-.post h2 a:visited {
+.Order h2 a:visited {
   color: #000;
 }
 
-.post > .date,
-.post > .actions {
+.Order > .date,
+.Order > .actions {
   float: right;
 }
 
