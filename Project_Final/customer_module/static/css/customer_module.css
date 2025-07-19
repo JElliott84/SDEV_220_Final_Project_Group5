@@ -11,7 +11,7 @@ h1,
 .page-header h1 a,
 .page-header h1 a:visited,
 .page-header h1 a:active {
-  color: #fff;
+  color: #82817e;
   font-size: 36pt;
   text-decoration: none;
 }
@@ -20,7 +20,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: Lobster, cursive;
+  font-family:  "Roboto", sans-serif;
 }
 
 .date {
@@ -39,7 +39,7 @@ h4 {
 .top-menu,
 .top-menu:hover,
 .top-menu:visited {
-  color: #fff;
+  color: #82817e;
   float: right;
   font-size: 26pt;
   margin-right: 20px;
@@ -60,13 +60,13 @@ h4 {
 
 .btn-secondary,
 .btn-secondary:visited {
-  color: #c25100;
+  color: #45d94d;
   background: none;
-  border-color: #c25100;
+  border-color: #45d94d;
   margin-left: 15px;
 }
 
 .btn-secondary:hover {
-  color: #FFF;
-  background-color: #c25100;
+  color: #82817e;
+  background-color: #45d94d;
 }
