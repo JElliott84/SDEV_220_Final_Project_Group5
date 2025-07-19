@@ -3,9 +3,9 @@ orders = []
 
 # Define available coil types with item numbers and prices
 avail_coils = {
-    1: {"name": "Coil 1", "price": 10.50},
-    2: {"name": "Coil 2", "price": 8.75},
-    3: {"name": "Coil 3", "price": 7.25}
+    1: {"name": "Coil 1", "price": 0.01},
+    2: {"name": "Coil 2", "price": 0.02},
+    3: {"name": "Coil 3", "price": 0.03}
 }
 
 def take_order():
