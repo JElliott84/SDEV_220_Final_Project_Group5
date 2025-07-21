@@ -1,4 +1,5 @@
 orders = []
+order_number = 1
 
 # Define available coil types with item numbers and prices
 available_coils = {
@@ -8,6 +9,7 @@ available_coils = {
 }
 
 def take_order():
+    global order_number
     """Takes a new order from the customer."""
     customer_name = input("Enter customer name: ")
     order_details = []  # List to store items for the current order
@@ -39,11 +41,13 @@ def take_order():
 
     # Store the complete order
     orders.append({
+        "order_number": order_number,
         "customer_name": customer_name,
         "items": order_details,
         "total_cost": total_cost
     })
-    print("Order placed successfully!")
+    print(f"Your Order (#{order_number}) has been placed successfully!")
+    order_number += 1
 
 def view_orders():
     if not orders:
